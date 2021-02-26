@@ -22,6 +22,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
   });
 
   const { email, password } = userCredentials;
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -58,13 +59,15 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
         />
         <ButtonsBarContainer>
           <CustomButton type="submit">Sign In</CustomButton>
+          {/* SIGN IN WITH GOOGLE BUTTON BROKEN
+          REVIEW REDUX-SAGA FILES
           <CustomButton
             type="button"
             onClick={googleSignInStart}
             isGoogleSignIn
           >
             Sign in with Google
-          </CustomButton>
+          </CustomButton> */}
         </ButtonsBarContainer>
       </form>
     </SignInContainer>
