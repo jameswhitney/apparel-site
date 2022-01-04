@@ -14,11 +14,15 @@
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
+    "ansi-regex": "^5.0.1",
     "body-parser": "^1.18.3",
     "compression": "1.7.4",
     "dotenv": "^8.2.0",
     "express": "^4.16.4",
-    "stripe": "6.28.0"
+    "firebase": "^9.6.0",
+    "glob-parent": "^5.1.2",
+    "stripe": "6.28.0",
+    "yargs-parser": "^13.1.2"
   },
   "devDependencies": {
     "concurrently": "^4.0.1",
